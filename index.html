@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Shyam Sridhar">
-	<meta name="Description" content="I made this webpage to recollect and cherish the memories these images represent. They portray quaint, idealistic times during our lives. Hopefully, we will move towards a brighter future after remembering these times.">
+	<meta name="Description" content="I made this webpage to recognize the following iconic NBA legends.">
 	<title>NBA Greats</title>
 	<link rel="stylesheet" type="text/css" href="nbaGreatsPhotos.css">
+  <script>UPLOADCARE_PUBLIC_KEY = "demopublickey";</script>
+  <script src="https://ucarecdn.com/libs/widget/3.2.1/uploadcare.full.min.js" charset="utf-8"></script>
 </head>
 <body style="background-color: lightgray">
 
@@ -162,14 +164,21 @@ Analytics"></a></div></noscript>
 <div>
 
 <h1>Contact Me</h1>
-<form method="POST" action="https://formspree.io/shyam.sridhar93@gmail.com">
+<form id="contactform" method="POST">
 
-<div><input type="email" name="email" placeholder="Your email"></div>
-<div><textarea type="Message" placeholder="Your message" style="width: 500px; height: 250px;"></textarea></div>
-<div><input type="file"></div>
-<div><input type="submit"></div>
+<div><input type="email" name="_replyto" placeholder="Your email"></div>
+<div><input type="hidden" name="_subject" value="Website contact"/></div>
+<div><textarea type="Message" name="Message" placeholder="Your message" style="width: 500px; height: 250px;"></textarea></div>
+<div><input type="text" name="_gotcha" style="display:none"/></div>
+<div><input type="hidden" role="uploadcare-uploader" name="my_file"/></div>
+<div><input type="submit" value="submit"></div>
 
 </div>
 </form>
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
+</script>
+
 </body>
 </html>
