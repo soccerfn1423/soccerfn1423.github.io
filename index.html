@@ -11,7 +11,7 @@
 </head>
 <body style="background-color: lightgray">
 
-<h1>NBA Greats</h1>
+<h1>NBA Legends</h1>
 
 <h2>Responsive Image Gallery (click to enlarge)</h2>
 
@@ -20,7 +20,7 @@
     <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Kobe_Bryant_8.jpg">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Kobe_Bryant_8.jpg" alt="Kobe" width="600" height="400">
     </a>
-    <div class="desc">The Black Mamba</div>
+    <div class="desc">The Black Mamba (free domain)</div>
   </div>
 </div>
 
@@ -38,7 +38,7 @@
     <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/d/da/Bill_Russell.jpg">
       <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Bill_Russell.jpg" alt="Bill Russell" width="600" height="400">
     </a>
-    <div class="desc">The Legendary Bill Russell</div>
+    <div class="desc">The Legendary Bill Russell (free domain)</div>
   </div>
 </div>
 
@@ -90,7 +90,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/b/bd/Hakeem.jpg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Hakeem.jpg" alt="Hakeem Olajuwan" width="600" height="400">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Hakeem.jpg" alt="Hakeem Olajuwon" width="600" height="400">
     </a>
     <div class="desc">Hakeem Olajuwan. By University of Houston Digital Library (http://digital.lib.uh.edu/u?/p15195coll6,182) [Public domain], <a href="https://commons.wikimedia.org/wiki/File%3AHakeem.jpg">via Wikimedia Commons</a></div>
   </div>
@@ -164,17 +164,22 @@ Analytics"></a></div></noscript>
 <div>
 
 <h1>Contact Me</h1>
-<form action="https://formspree.io/shyam.sridhar93@gmail.com" method="POST">
+<form id="contactform" method="POST">
 
 <div><input type="email" name="_replyto" placeholder="Your email"></div>
 <div><input type="hidden" name="_subject" value="Website contact"/></div>
 <div><textarea type="Message" name="Message" placeholder="Your message" style="width: 500px; height: 250px;"></textarea></div>
 <div><input type="text" name="_gotcha" style="display:none"/></div>
 <div><input type="hidden" role="uploadcare-uploader" name="my_file"/></div>
-<div><input type="submit" value="submit"></div>
+<div><input type="submit" value="Submit"></div>
 
-</div>
 </form>
+</div>
+
+<script>
+  var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', 'https://formspree.io/' + 'shyam.sridhar93' + '@' + 'gmail' + '.' + 'com');
+</script>
 
 </body>
 </html>
